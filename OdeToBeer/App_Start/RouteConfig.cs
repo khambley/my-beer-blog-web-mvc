@@ -11,7 +11,14 @@ namespace OdeToBeer
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
+
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+
+            // Types/Lager (define our own route)
+            routes.MapRoute("Types", "types/{name}", new { controller = "Types", action = "Search", name = "" });
+
+
+            // /Home
 
             routes.MapRoute(
                 name: "Default",
