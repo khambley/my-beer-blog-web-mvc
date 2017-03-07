@@ -1,0 +1,20 @@
+﻿@model OdeToBeer.Models.BeerReviews
+
+<div class="media">
+    <div class="media-left">
+        <a href="#">
+            <img class="pull-left padding-right" src="http://placehold.it/100x100" alt="Placeholder">
+        </a>
+    </div>
+    <div class="media-body">
+        <h4 class="media-heading">@Model.Name</h4>
+        Type: @Model.Type<br />
+        Company: @Model.Company<br />
+        Rating: @Model.Rating / 10<br />
+        @Model.Comments<br />
+        @Html.ActionLink("Edit", "Edit", new { id = Model.Id })
+
+    </div>
+</div>
+<hr />
+

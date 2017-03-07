@@ -79,3 +79,4 @@ H:\OneDrive\WINDOWS_PROJECTS\OdeToBeer\OdeToBeer\bin\Microsoft.Owin.Security.Twi
 H:\OneDrive\WINDOWS_PROJECTS\OdeToBeer\OdeToBeer\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 H:\OneDrive\WINDOWS_PROJECTS\OdeToBeer\OdeToBeer\obj\Debug\OdeToBeer.dll
 H:\OneDrive\WINDOWS_PROJECTS\OdeToBeer\OdeToBeer\obj\Debug\OdeToBeer.pdb
+H:\OneDrive\WINDOWS_PROJECTS\OdeToBeer\OdeToBeer\obj\Debug\MyBeerBlog.csprojResolveAssemblyReference.cache

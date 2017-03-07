@@ -8,20 +8,6 @@
 
 @foreach (var item in Model)
 {
-    // Media object display in Bootstrap
-    <div class="media">
-        <div class="media-left">
-            <a href="#">
-                <img class="pull-left padding-right" src="http://placehold.it/100x100" alt="Placeholder">
-            </a>
-        </div>
-        <div class="media-body">
-            <h4 class="media-heading">@item.Name</h4>
-            Type: @item.Type<br />
-            Company: @item.Company<br />
-            Rating: @item.Rating / 10<br />
-            @item.Comments
-        </div>
-    </div>
-    <hr class="horz-line"/>
+    
+    @Html.Partial("_Review", item)
 }
