@@ -80,3 +80,5 @@ H:\OneDrive\WINDOWS_PROJECTS\OdeToBeer\OdeToBeer\bin\Microsoft.Owin.Security.Mic
 H:\OneDrive\WINDOWS_PROJECTS\OdeToBeer\OdeToBeer\obj\Debug\OdeToBeer.dll
 H:\OneDrive\WINDOWS_PROJECTS\OdeToBeer\OdeToBeer\obj\Debug\OdeToBeer.pdb
 H:\OneDrive\WINDOWS_PROJECTS\OdeToBeer\OdeToBeer\obj\Debug\MyBeerBlog.csprojResolveAssemblyReference.cache
+H:\OneDrive\WINDOWS_PROJECTS\OdeToBeer\OdeToBeer\obj\Debug\OdeToBeer.Migrations.InitialCreate.resources
+H:\OneDrive\WINDOWS_PROJECTS\OdeToBeer\OdeToBeer\obj\Debug\MyBeerBlog.csproj.GenerateResource.Cache

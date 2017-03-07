@@ -1,4 +1,5 @@
-﻿@{
+﻿@model IEnumerable<OdeToBeer.Models.Beer>
+@{
     ViewBag.Title = "Home";
 }
 
@@ -11,23 +12,24 @@
 </div>
 
 <div class="row">
-    <div class="col-md-4">
-        <h2>Reviews</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in metus nulla. 
-            Phasellus interdum vulputate orci hendrerit pulvinar. Donec et semper velit, et aliquet tortor.  
-        </p>
-        <p><a class="btn btn-default" href="#">Read more &raquo;</a></p>
+    <div class="col-md-8">
+        @foreach (var item in Model)
+        {
+            <div class="media">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="pull-left padding-right" src="http://placehold.it/100x100" alt="Placeholder">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">@item.Name</h4>
+                    Type: @item.Type<br />
+                    Company: @item.CompanyId<br />
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id })
+                </div>
+            </div>
+            <hr />
+        }
     </div>
-    <div class="col-md-4">
-        <h2>Beer Education</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in metus nulla.
-            Phasellus interdum vulputate orci hendrerit pulvinar. Donec et semper velit, et aliquet tortor.</p>
-        <p><a class="btn btn-default" href="#">Read more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Latest Posts</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="#">Read more &raquo;</a></p>
-    </div>
+    
 </div>

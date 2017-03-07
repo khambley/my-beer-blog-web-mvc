@@ -9,11 +9,11 @@ namespace OdeToBeer.Controllers
 {
     public class HomeController : Controller
     {
-        MyBeerBlogDb _db = new MyBeerBlogDb();
+        MyBeerBlogDb _db = new MyBeerBlogDb(); // Instantiate MyBeerBlogDb in order to use it.
         public ActionResult Index()
         {
-            var model = _db.Beers.ToList();
-            return View();
+            var model = _db.Beer.ToList();
+            return View(model);
         }
 
         public ActionResult About()

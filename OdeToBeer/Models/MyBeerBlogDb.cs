@@ -8,7 +8,11 @@ namespace OdeToBeer.Models
 {
     public class MyBeerBlogDb : DbContext
     {
-        public DbSet<Beer> Beers { get; set; }
+        public MyBeerBlogDb() : base("name=DefaultConnection")
+        {
+
+        }
+        public DbSet<Beer> Beer { get; set; } // select * in SQL Server
         public DbSet<BeerReviews> Reviews { get; set; }
 
     }

@@ -10,7 +10,8 @@ namespace OdeToBeer.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public string Type { get; set; }
-        public string Image { get; set; }
+        public string Image { get; set; } // http://cpratt.co/file-uploads-in-asp-net-mvc-with-view-models/
+        public int CompanyId { get; set; }
         public ICollection<BeerReviews> Reviews { get; set; }
 
     }
